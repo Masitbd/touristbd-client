@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   GoogleAuthProvider,
   getAuth,
@@ -7,7 +7,6 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
-import { useState } from "react";
 import initializationAuthentication from "../Pages/Login/Firebase/firebase.initialize";
 
 initializationAuthentication();
