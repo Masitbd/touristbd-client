@@ -7,11 +7,11 @@ import { useParams } from "react-router-dom";
 const ServiceInfo = () => {
   const { serviceId } = useParams();
   const [service, setService] = useState({});
-  useEffect(() => {
+  /* useEffect(() => {
     fetch(`http://localhost:5001/services/${serviceId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
-  }, []);
+  }, []); */
 
   return (
     <Card className="container px-5 py-2">
