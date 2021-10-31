@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-  const { id, name, phone, img, Price } = props.service;
-  console.log("My id", id);
+  const { _id, name, description, price, img } = props.service;
+
   return (
-    <div>
+    <div className="container">
       <div className="display-card">
         <img src={img} alt="" height="200" width="100%" />
-        <p>{name}</p>
-        <p>{phone}</p>
-        <p>{Price}</p>
-        <Link to={`/serviceInfo/${id}`}>
+        <h3 className="my-2 text-success">{name}</h3>
+        <p>{description}</p>
+        <p>${price}</p>
+        <Link to={`/serviceInfo/${_id}`}>
           <button className="btn-regular">See More</button>
         </Link>
       </div>

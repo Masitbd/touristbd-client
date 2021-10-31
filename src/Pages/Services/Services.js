@@ -7,25 +7,18 @@ import "./Services.css";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("./services.json")
+    fetch("https://gory-nightmare-31533.herokuapp.com/services")
       .then((response) => response.json())
       .then((data) => setServices(data));
   }, []);
   return (
     <div className="container">
-      <h2 className="text-center text-danger">Our services</h2>
+      <h2 className="text-center text-danger my-3">Our services</h2>
       <div className="information-container">
         {services.map((service) => (
           <Service key={service.id} service={service} />
         ))}
       </div>
-      <div>
-        {
-          /* services.find */
-          <ServiceInfo services={services} />
-        }
-      </div>
-      div
     </div>
   );
 };

@@ -1,0 +1,7 @@
+.information-containe{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  margin-left: 400px;
+}
+

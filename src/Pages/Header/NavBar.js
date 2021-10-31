@@ -12,10 +12,10 @@ const NavBar = () => {
           Home
         </NavLink>
         <NavLink activeClassName="active" to="/services">
-          Services
+          Add Service
         </NavLink>
-        <NavLink activeClassName="active" to="/departments">
-          Departments
+        <NavLink activeClassName="active" to="/mylist">
+          Mylist
         </NavLink>
         <NavLink activeClassName="active" to="/gallery">
           Gallery
