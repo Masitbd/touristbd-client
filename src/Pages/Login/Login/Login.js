@@ -17,8 +17,11 @@ const Login = () => {
   };
   return (
     <div>
-      <button className="btn btn-warning " onClick={handleGoogleLogin}>
-        Google signin
+      <button
+        className="btn btn-warning my-3 px-3 py-3 text-white "
+        onClick={handleGoogleLogin}
+      >
+        Google signing
       </button>
     </div>
   );
